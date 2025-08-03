@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Adio Muizz Adeniyi | Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="header">
+	<a href="#" class="logo"></a>
+  
+	<!-- Hamburger Menu Icon -->
+	<div class="menu-toggle" id="menu-toggle">
+	  <i class="fas fa-bars"></i>
+	</div>
+  
+	<!-- Navigation Menu -->
+	<nav class="navbar" id="navbar">
+	  <ul class="nav-links">
+		<li><a href="#projects">Projects</a></li>
+		<li>
+		  <a href="https://www.linkedin.com/in/adio-muizz-adeniyi/" target="_blank" aria-label="LinkedIn">
+			<i class="fab fa-linkedin"></i>
+		  </a>
+		</li>
+		<li>
+		  <a href="https://github.com/adiomuizz" target="_blank" aria-label="GitHub">
+			<i class="fab fa-github"></i>
+		  </a>
+		</li>
+	  </ul>
+	</nav>
+  </header>
+  
+  <!-- Hero Section -->
+  <section class="hero">
+    <h1>Adio Muizz Adeniyi</h1>
+    <h2>Data Analyst Portfolio</h2>
+    <p>A passionate and results-driven Data Analyst specializing in Power BI, Excel, SQL, and Python. Adept at transforming complex data into actionable insights to drive business growth.</p>
+    <a href="https://www.linkedin.com/in/adio-muizz-adeniyi/" target="_blank" class="button">
+      <i class="fab fa-linkedin"></i> Connect on LinkedIn
+    </a>
+  </section>
+
+  <!-- Projects Section -->
+  <main id="projects" class="projects">
+    <h2>Featured Projects</h2>
+
+    <div class="project-card">
+      <img src="images/HR .png" alt="HR Analytics Dashboard" />
+      <div class="project-info">
+        <h3>HR Analytics Dashboard (Power BI)</h3>
+        <p>Provides insights into employee performance, recruitment metrics, and workforce demographics.</p>
+        <a href="https://github.com/adiomuizz/HR-Dashboard" target="_blank" class="button">View Project</a>
+      </div>
+    </div>
+
+    <!-- Repeat structure for each project -->
+    <div class="project-card">
+      <img src="images/Trans.png" alt="Transaction Sales Analysis" />
+      <div class="project-info">
+        <h3>Transaction Sales Analysis (Power BI)</h3>
+        <p>Dashboard for analyzing sales across districts, stores, and overall performance trends.</p>
+        <a href="https://github.com/adiomuizz/Transcation-Dashboard" target="_blank" class="button">View Project</a>
+      </div>
+    </div>
+
+    <div class="project-card">
+      <img src="images/Retail.png" alt="Retail Analysis Dashboard" />
+      <div class="project-info">
+        <h3>Retail Analysis Dashboard (Power BI)</h3>
+        <p>Insightful visualizations for sales, district metrics, and store openings.</p>
+        <a href="https://github.com/adiomuizz/Retail-Analysis-Dashboard" target="_blank" class="button">View Project</a>
+      </div>
+    </div>
+
+    <div class="project-card">
+      <img src="images/Binance.png" alt="Binance Tweet Sentiment" />
+      <div class="project-info">
+        <h3>Sentiment Analysis on Tweets (Python)</h3>
+        <p>Uses NLP to determine public sentiment on Binance’s customer service.</p>
+        <a href="https://github.com/adiomuizz/Sentiment-Analysis-of-Tweets-Related-to-Binance-Customers-Experience-Using-Python" target="_blank" class="button">View Project</a>
+      </div>
+    </div>
+
+    <div class="project-card">
+      <img src="images/Net.jpg" alt="Netflix SQL Project" />
+      <div class="project-info">
+        <h3>Netflix Content Analysis (SQL)</h3>
+        <p>EDA using SQL on Netflix’s dataset for trends in movies and shows.</p>
+        <a href="https://github.com/adiomuizz/Content-Analysis-Using-SQL" target="_blank" class="button">View Project</a>
+      </div>
+    </div>
+
+    <div class="project-card">
+      <img src="images/Sales.jpeg" alt="Retail Sales Dashboard" />
+      <div class="project-info">
+        <h3>Sales Analysis Dashboard (Power BI)</h3>
+        <p>Explores revenue and profit metrics from a retail dataset.</p>
+        <a href="https://github.com/adiomuizz/Retail-Store-Dashboard" target="_blank" class="button">View Project</a>
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+	<div class="footer-content">
+	  <div class="contact">
+		<p><i class="fas fa-map-marker-alt"></i> Lagos, Nigeria</p>
+		<p><i class="fas fa-phone"></i> (+234) 701-480-9549</p>
+		<p><i class="fas fa-envelope"></i> Muizzadio@gmail.com</p>
+	  </div>
+  
+	  <div class="social">
+		<a href="https://www.linkedin.com/in/adio-muizz-adeniyi/" target="_blank"><i class="fab fa-linkedin"></i></a>
+		<a href="https://github.com/adiomuizz" target="_blank"><i class="fab fa-github"></i></a>
+	  </div>
+	</div>
+  
+	<div class="copyright">
+	  <p>&copy; <span id="year"></span> Adio Muizz Adeniyi. All rights reserved.</p>
+	</div>
+  </footer>
+	
+  <script>
+	const toggle = document.getElementById('menu-toggle');
+	const nav = document.getElementById('navbar');
+  
+	toggle.addEventListener('click', () => {
+	  nav.classList.toggle('active');
+	});
+
+  document.getElementById("year").textContent = new Date().getFullYear();
+
+  </script>
+  
+  
+</body>
+</html>
