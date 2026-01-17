@@ -282,8 +282,9 @@ img {
 }
 .hero p {
   font-size: 1.4rem;
-  justify-content: center;
-  text-align: center;
+  text-align: justify;
+  font-family: 'Segoe UI', sans-serif;
+  margin-top: 40px;
 }
 
 #button-container {
